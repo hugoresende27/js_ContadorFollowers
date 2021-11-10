@@ -112,6 +112,14 @@ body
         visibility: hidden;
     }
 }
+@media(max-width: 380px){/*MEDIA QUERY PARA COM MENOS DE 580px VAI DISPOR OS ELEMENTOS DA PAGINA EM COLUNA, RESPONSIVO*/
+    body{
+        flex-direction: column;
+    }
+    #ident{
+        visibility: hidden;
+    }
+}
 
 
 
