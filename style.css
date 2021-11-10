@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=MuseoModerno:wght@100&family=Roboto+Mono:wght@500&display=swap');
+:root
+{
+    --left-bg-color:rgba(87,84,236,0.7);
+    --right-bg-color:rgba(43,43,43,0.8);
+    --left-btn-color:rgba(87,83,236,1);
+    --right-btn-color:rgb(239, 243, 8);
+
+    --hover-width:75%;
+    --other-width:25%;
+    --speed: 1000ms;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+/*alinhar conteudos ao centro*/
+body
+{
+    background-image: linear-gradient(90deg, #8e44ad, #9e44ac);
+   font-family: 'Roboto Mono',sans-serif;
+   /* font-size: 1.5rem; */
+    display: flex;          /*coloca tudo em linha*/
+   /*flex-direction: column; /*coloca tudo em coluna*/
+    align-items: center;    /*alinha horizontalmente*/
+    justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+   height: 100vh;
+    overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
+    margin: 0;
+   /* overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+   /* padding: 20px;*/
+}
+
+.contador-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 50px;
+    text-align: center;
+}
+.contador{
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+/*estilos do footer */
+
+#ident{
+    font-size: 8pt;
+    color: rgb(255, 196, 0);
+    text-align: center;
+    border-top: 1px dashed;
+    font-family:'lato',sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+}
+
+#ident a{
+    color: #171a13;  /*cor dos links a preto*/
+    text-decoration: none;     /*retira o sublinhado dos links*/
+ }
+ 
+ #ident a:hover{
+     color: rgb(255, 196, 0);
+ }
+
+
+
+
+
+
+@media(max-width: 480px)        /*para ecras mais pequenos*/
+{
+    body{
+       height: auto;
+        overflow:visible;
+    }
+    #ident{
+        visibility: hidden;
+    }
+
+
+
+@media (max-width: 800px)
+{
+    body{
+     
+        overflow:visible;
+    }
+    #ident{
+        visibility: hidden;
+    }
+
+
+}
+
+@media(max-width: 580px){/*MEDIA QUERY PARA COM MENOS DE 580px VAI DISPOR OS ELEMENTOS DA PAGINA EM COLUNA, RESPONSIVO*/
+    body{
+        flex-direction: column;
+    }
+    #ident{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
